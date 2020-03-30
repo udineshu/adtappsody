@@ -1,0 +1,11 @@
+---
+applications:
+- name: order
+  memory: 1024M
+  instances: 1
+  path: ./target/order-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  routes:
+  - route: order-latest.apps.dev.pcf-aws.com
+  
+     

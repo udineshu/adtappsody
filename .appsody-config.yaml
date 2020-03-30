@@ -1,0 +1,2 @@
+project-name: teststack-1
+stack: dev.local/appsody/adtstack:0.3
