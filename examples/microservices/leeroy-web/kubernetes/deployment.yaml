@@ -17,5 +17,7 @@ spec:
       containers:
         - name: leeroy-web-my-container
           image: hello-world:8
+          command: [ "sleep" ]
+          args: [ "infinity" ]
           ports:
             - containerPort: 8080
