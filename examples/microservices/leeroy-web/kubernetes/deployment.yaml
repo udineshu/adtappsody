@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: leeroy-web
+  name: leeroy-web-mydeploy
   labels:
     app: leeroy-web
 spec:
@@ -15,7 +15,7 @@ spec:
         app: leeroy-web
     spec:
       containers:
-        - name: leeroy-web
+        - name: leeroy-web-my-container
           image: hello-world:8
           ports:
             - containerPort: 8080
