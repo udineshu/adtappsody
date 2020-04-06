@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: order-web-appsody
-          image: udineshu/order-service:10
+          image: udineshu/myprivaterepo:latest
           command: [ "sleep" ]
           args: [ "infinity" ]
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
