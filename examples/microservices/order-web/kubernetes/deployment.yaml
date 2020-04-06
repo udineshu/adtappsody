@@ -17,5 +17,7 @@ spec:
       containers:
         - name: order-web
           image: udineshu/order-service:10
+          command: [ "sleep" ]
+          args: [ "infinity" ]
           ports:
             - containerPort: 8080
