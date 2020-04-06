@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: leeroy-web
+  name: order-web
   labels:
-    app: leeroy-web
+    app: order-web
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: leeroy-web
+      app: order-web
   template:
     metadata:
       labels:
-        app: leeroy-web
+        app: order-web
     spec:
       containers:
-        - name: leeroy-web
-          image: leeroy-web
+        - name: order-web
+          image: udineshu/order-service:10
           ports:
             - containerPort: 8080
