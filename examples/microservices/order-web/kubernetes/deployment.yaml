@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: order-web
+  name: order-web-appsody
   labels:
-    app: order-web
+    app: order-web-appsody
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: order-web
+      app: order-web-appsody
   template:
     metadata:
       labels:
-        app: order-web
+        app: order-web-appsody
     spec:
       containers:
-        - name: order-web
+        - name: order-web-appsody
           image: udineshu/order-service:10
           command: [ "sleep" ]
           args: [ "infinity" ]
